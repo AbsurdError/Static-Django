@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Yanone Kaffeesatz' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'app/css/style.css'%}">
+    <title>{% block title%} Base {% endblock %}</title>
+</head>
+<body>
+    {% include 'app/header.html' %}
+    {% block content %}
+
+
+
+    {% endblock %}
+    {% include 'app/footer.html'%}
+</body>
+</html>
